@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Reg Form</title>
+    <style>
+        .input{
+            width: 600px; 
+            height: 35px; 
+            border-radius: 3px
+        }
+        .button{
+            background-color: rgb(43, 161, 63); 
+            padding: 10px 15px; 
+            border: none; 
+            border-radius: 4px; 
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <h2 align="center">Student Registration Form</h2>
+            <table bgcolor="lightgrey" cellpadding="7" align="center" width="70%">
+                <tr>
+                    <td>First Name:</td>
+                    <td><input class="input" type="text" placeholder="  Enter your first name" required></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input class="input" type="text" placeholder="  Enter your last name" required></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input class="input" type="email" placeholder="  it should contain @," required></td>
+                </tr>
+                <tr>
+                    <td> Password:</td>
+                    <td><input class="input" type="password" required></td>
+                </tr>
+                <tr>
+                    <td>Mobile:</td>
+                    <td><input class="input" type="number" placeholder="  only 10 digits allowed" required></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td><input type="radio" name="gender">Male
+                        <input type="radio" name="gender">Female</td>
+                </tr>
+                <tr>
+                    <td>D.O.B:</td>
+                    <td><input class="input" type="date"></td>
+                </tr>
+                <tr>
+                    <td>Adress:</td>
+                    <td><textarea rows="9" required style="border-radius: 3px; width: 600px;" required></textarea></td>
+                </tr>
+                <tr>
+                    <td> City:</td>
+                    <td>
+                        <select>
+                            <option value="">select</option>
+                            <option value="">Hyderabad</option>
+                            <option value="">Yadadri Bhuvanagiri</option>
+                            <option value="">Suryapet</option>
+                            <option value="">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> State:</td>
+                    <td>
+                        <select>
+                            <option value="">select</option>
+                            <option value="">Tamilnadu</option>
+                            <option value="">Andhra Pradesh</option>
+                            <option value="">Telangana</option>
+                            <option value="">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Country:</td>
+                    <td>
+                        <select>
+                            <option value="">select</option>
+                            <option value="">China</option>
+                            <option value="">India</option>
+                            <option value="">US</option>
+                            <option value="">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Area PIN:</td>
+                    <td><input class="input" type="number" required></td>
+                </tr>
+                <tr>
+                    <td>Qualification:</td>
+                    <td>
+                        <select>
+                            <option value="">Select Qualification</option>
+                            <option value="">B.Tech/BE</option>
+                            <option value="">M.Tech</option>
+                            <option value="">Bsc/B.com</option>
+                            <option value="">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Specialization: </td>
+                    <td><input type="checkbox">Computer Science <br>
+                        <input type="checkbox">Information Technology <br>
+                        <input type="checkbox">Computer Architecture <br>
+                        <input type="checkbox">Other<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Languages: </td>
+                    <td><input type="checkbox">English <br>
+                        <input type="checkbox">Telugu <br>
+                        <input type="checkbox">Hindi
+                    </td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="reset" value="Clear Form" style="background-color: rgb(214, 192, 69); color: black;"  ></td>
+                    <td><input class="button" type="submit" value="Register Now"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
