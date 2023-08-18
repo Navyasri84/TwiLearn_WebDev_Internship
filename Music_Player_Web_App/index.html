@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music_Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="volume-controls">
+                <div class="circle" onclick="toggleVolumeRange()">
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="volume-range-container">
+                    <input type="range" value="100" id="volumeRange">
+                </div>
+            </div>
+                <div class="circle">
+                    <i class="fa-solid fa-list"></i>
+                </div>
+            </nav>
+            <img src="green.jpg" alt="song image" class="image">
+
+            <h4 class="song-name">Oh Sita Hey Rama</h4>
+
+            <audio id="song">
+                <source src="Audio.mp3" type="audio/mpeg">
+            </audio>
+
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <i class="fa-solid fa-arrow-rotate-right"></i>
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+                <i class="fa-regular fa-heart" onclick="like()" id="favourite"></i>
+            </div>
+        </div>
+    </div>
+    
+      <script src="script.js"></script>
+</body>
+</html>
